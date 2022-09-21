@@ -14,3 +14,14 @@ type Produk struct {
 	KatId        any `json:"katId"`
 	NameKategori any `json:"nameKategori"`
 }
+
+type DepartmentRequest struct{
+	Param map [string]string `json:"param"`
+	
+}
+
+type Department struct{
+	Name string `json:"nama"`
+	DeptId string `json:"deptId"`
+	Ket string `json:"ket"`
+}

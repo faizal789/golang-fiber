@@ -7,8 +7,11 @@ import (
 
 
 type Service interface{
-	PanggilKategoriX() []model.Kategori
 	PanggilProdukdbx() []model.Produk
+	PanggilkategoriX(page model.Halaman) []model.Kategori
+	BanyakKategoriX(page model.Halaman) int64
+	PanggilDeptdbx() []model.Department
+	InsertDeptdbx(dept model.DepartmentRequest) model.DepartmentRequest
 
 }
 
